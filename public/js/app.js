@@ -1,12 +1,13 @@
 
 
-console.log('Client side Javascript file is lodes')
+// console.log('Client side Javascript file is lodes')
 
 fetch('http://puzzle.mead.io/puzzle').then((response)=>{
     response.json().then((data)=>{
         console.log(data)
     })
 })
+
 
 
 
