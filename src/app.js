@@ -10,6 +10,8 @@ const forcast = require('./utils/forcast')
 
 const app = express()
 
+const port = process.env.PORT || 3000
+
 // Define Paths For Express Config
 const publicdirpath = path.join(__dirname, '../public')
 const TemplatesPath = path.join(__dirname, '../templates/views')
@@ -88,6 +90,6 @@ app.get('/product',(req,res)=>{
 })
 
 
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log('Server is Up')
 })
